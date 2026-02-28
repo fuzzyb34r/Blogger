@@ -1,2 +1,2 @@
 # Blogger
-Blog web app written with Node, Express, and EJS
+Blog web app written with Node, Express, and EJS. Helped teach me these frameworks and practice with them.
