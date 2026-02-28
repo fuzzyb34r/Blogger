@@ -1,0 +1,22 @@
+<%- include("partials/header.ejs") %>
+
+<center><h1>Edit Your Post Below For Enhanced Awesomeness! 👇</h1></center><br>
+
+<div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+    <form action="/update-post" method="POST">
+
+    <input type="hidden" name="oldTitle" value="<%= blog_post_title_to_edit %>">
+
+    <label for="title">Post Title:</label>
+    <input type="text" name="title" id="title" style="width: 500px;" value="<%= blog_post_title_to_edit %>" required><br><br>
+
+    <label for="body" style="vertical-align: top;">Post Body:</label>
+    <textarea name="body" id="body" style="width: 500px; height: 200px;" required><%= blog_post_body_to_edit %></textarea><br>
+
+    <input type="submit" class="btn btn-success" value="Submit" style="display: block; margin: 10px 0 0 300px;">
+
+    </form>
+
+</div>
+
+<%- include("partials/footer.ejs") %>
